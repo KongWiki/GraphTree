@@ -1,0 +1,14 @@
+## 忽略文件
+.idea
+/out
+/target
+*/resources
+## class
+*.class
+
+## 文件
+*.txt
+*.csv
+*.bin
+
+
