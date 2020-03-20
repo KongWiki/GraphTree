@@ -99,10 +99,12 @@ public class AStar {
         if (canAddNodeToOpen(mapInfo, x, y)) {
             Node end = mapInfo.end;
             Coord coord = new Coord(x, y);
-            int G = current.G + value; // 计算邻结点的G值
+            // 计算邻结点的G值
+            int G = current.G + value;
             Node child = findNodeInOpen(coord);
             if (child == null) {
-                int H = calcH(end.coord, coord); // 计算H值
+                // 计算H值
+                int H = calcH(end.coord, coord);
                 if (isEndNode(end.coord, coord)) {
                     child = end;
                     child.parent = current;
